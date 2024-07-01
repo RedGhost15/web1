@@ -22,7 +22,6 @@ window.onscroll = function(){
         bar.classList.add("activeH")
         bar1.classList.add("activeH")
         bar2.classList.add("activeH")
-
     }else{
         header.classList.remove("active")
         headerA.classList.remove("activeA")
@@ -34,7 +33,6 @@ window.onscroll = function(){
         bar.classList.remove("activeH")
         bar1.classList.remove("activeH")
         bar2.classList.remove("activeH")
-
     } 
 }
 

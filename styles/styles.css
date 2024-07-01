@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 body{
@@ -60,7 +61,6 @@ header.active{
     text-transform: uppercase;
     transition: all 0.5s;
 }
-
 .logo {
     display: flex;
     flex-direction: row;
@@ -83,17 +83,42 @@ header.active{
     text-transform: uppercase;
     transition: all 0.2s;
 }
-.headerA:hover, .headerA1:hover, .headerA2:hover, .headerA3:hover, .headerA4:hover{
-    background-color: rgba(255, 255, 255, 0.199);
+/* header hover---------- */
+.headerA:hover{
+    background-color: rgba(219, 219, 219, 0.575);
     transition: all 0.2s ease-in;
     padding: 10px 15px;
     border-radius: 15px;
 }
-.home {
+.headerA1:hover{
+    background-color: rgba(219, 219, 219, 0.575);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.headerA2:hover{
+    background-color: rgba(219, 219, 219, 0.575);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.headerA3:hover{
+    background-color: rgba(219, 219, 219, 0.575);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.headerA4:hover{
+    background-color: rgba(219, 219, 219, 0.575);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+.sec1 {
     background-color: black;
     color: white;
     height: 700px;
-    background-image: url(/img/s24u.webp);
+    background-image: url(/img/s24u1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -186,6 +211,181 @@ ul li a:hover {
     padding: 10px 15px;
     border-radius: 15px;
 }
+/* sec2 */
+.sec2{
+    padding-top: 50px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sec2 img{
+    width: auto;
+    padding-top: 50px;
+}
+.s2div{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.sec2 h2{
+    padding-top: 50px;
+}
+.sec2 p {
+    font-size: 20px;
+    max-width: 600px;
+    padding-bottom: 50px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.left, .right{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid rgb(187, 183, 164);
+    background-color: rgba(240, 239, 238, 0.527);
+    padding: 20px;
+    border-radius: 30px; */
+}
+.left p, .right p{
+    font-size: 30px;
+    max-width: 300px;
+    font-weight: 500;
+}
+.s2div{
+    gap: 150px;
+}
+.left button, .right button{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    color: rgba(82,76,86,254);
+    font-weight: 700;
+}
+
+.left button:hover, .right button:hover {
+    background-color: rgba(210,209,205,254);
+    transition: all 0.5s ease-in;
+    padding: 10px 15px;
+    border: none;
+    color: black;
+}
+/* sec3 */
+.sec3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.sec3 h2 {
+    padding-bottom: 50px;
+}
+.sec3 img {
+    border-radius: 30px;
+}
+.sec3 p {
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sec3 p:nth-child(4){
+    padding-bottom: 30px;
+}
+.sec3 button{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: none;
+    color: rgba(82,76,86,254);
+    font-weight: 700;
+}
+.sec3 button:hover{
+    background-color: rgba(210,209,205,254);
+    transition: all 0.5s ease-in;
+    padding: 10px 15px;
+    border: none;
+    color: black;
+}
+/* sec4 */
+.sec4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sec4 p {
+    font-size: 20px;
+    max-width: 600px;
+    font-weight: 300;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 50px;
+}
+.sec4 img {
+    width: auto;
+    border-radius: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+/* sec5 */
+.sec5{
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #ccc;
+    margin: 30px auto;
+    max-width: 1440px;
+}
+.sec5 div{
+    -webkit-box-flex: 1;
+    flex: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #d9d9d9;
+    border-bottom: 1px solid #ccc;
+    width: 20%;
+}
+.sec5 div:nth-child(5){
+    border-right: none;
+}
+.sec5 h3{
+    padding-top: ;
+}
+.sec5 a, .sec5 h3{
+    color: black;
+    padding: 7px 24px;
+    display: block;
+    font-size: 25px;
+}
+.sec5 ul{
+    padding-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* @media--------------------------------------- */
 @media(max-width: 768px){
     .navbar{
@@ -259,7 +459,7 @@ ul li a:hover {
     nav ul {
         width: 100%;
     }
-    nav a {
+    nav a.active {
         align-items: center;
         justify-content: flex-start;
         color: white;
@@ -267,9 +467,9 @@ ul li a:hover {
     .nav-link.activeH{
         color: white;
     }
-    .home{
+    .sec1{
         background-image: url(/img/s24only.png);
-        background-size: auto;
+        background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
     }
@@ -279,9 +479,50 @@ ul li a:hover {
     .hamburger{
         display: block;
     }
+    .sec2 img{
+        max-width: 50%;
+    }
+    .left button, .right button{
+        background-color: rgba(210,209,205,254);
+        padding: 10px 15px;
+        border: none;
+        color: black;
+    }
+    .s2div{
+        gap: 30px;
+    }
+    .sec3 img {
+        padding: 1px 10px;
+        width: 100%;
+        border-radius: 30px;
+    }
+    .sec3 button{
+        background-color: rgba(210,209,205,254);
+        padding: 10px 15px;
+        border: none;
+        color: black;
+    }
+    .sec4 img {
+        width: 100%;
+        padding: 1px 10px;
+        border-radius: 30px;
+    }
+    .sec5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sec5 div{
+        border: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 }
 @media(max-width:425px){
-    .home{
+    .sec1{
         background-size: 80%;
         background-attachment: inherit;
     }
