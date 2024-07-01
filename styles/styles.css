@@ -6,7 +6,7 @@
 body{
     font-family: "Roboto";
 }
-
+/* desktop header-------------------- */
 header {
     width: 100vw;
     height: 100px;
@@ -83,6 +83,12 @@ header.active{
     text-transform: uppercase;
     transition: all 0.2s;
 }
+.headerA:hover, .headerA1:hover, .headerA2:hover, .headerA3:hover, .headerA4:hover{
+    background-color: rgba(255, 255, 255, 0.199);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
 .home {
     background-color: black;
     color: white;
@@ -91,7 +97,7 @@ header.active{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: 80%;
+    background-size: auto;
 
 }
 .about {
@@ -112,4 +118,171 @@ h2 {
     font-size: 50px;
     font-weight: 800;
     text-transform: uppercase;
+}
+/* hamburger/navbar-------- */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    padding-right: 30px;
+}
+.bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+.bar1 {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+.bar2 {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: white;
+}
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;   
+}
+.nav-item {
+    display: block;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 50px;
+}
+li {
+    list-style: none;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.199);
+    transition: all 0.2s ease-in;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+/* @media--------------------------------------- */
+@media(max-width: 768px){
+    .navbar{
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 0px;
+    }
+    .hamburger.activeH{
+        display: block;
+        padding-right: 30px;
+    }
+    .bar.activeH {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        background-color: black;
+    }
+    .bar1.activeH {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        background-color: black;
+    }
+    .bar2.activeH {
+        display: block;
+        width: 30px;
+        height: 4px;
+        margin: 5px 0;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        background-color: black;
+    }
+    .hamburger.active .bar1{
+        opacity: 0;
+    }
+    .hamburger.active .bar{
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar2{
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 100px;
+        height: 100vh;
+        gap: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        background-color: black;
+        box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        text-align: left;
+        transition: 0.3s;
+    }
+    .nav-menu.active{
+        right: 0;
+        background-color: black;
+    }
+    .nav-menu.activeH{
+        right: 0;
+        background-color: white;
+    }
+    nav ul {
+        width: 100%;
+    }
+    nav a {
+        align-items: center;
+        justify-content: flex-start;
+        color: white;
+    }
+    .nav-link.activeH{
+        color: white;
+    }
+    .home{
+        background-image: url(/img/s24only.png);
+        background-size: auto;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .header-right{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+@media(max-width:425px){
+    .home{
+        background-size: 80%;
+        background-attachment: inherit;
+    }
 }
