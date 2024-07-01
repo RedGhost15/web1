@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto";
+}
+
+header {
+    width: 100vw;
+    height: 100px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s;
+}
+header.active{
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    color: black;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s;
+}
+/* header active-------------------- */
+.headerA.activeA{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.headerA1.activeA{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.headerA2.activeA{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.headerA3.activeA{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.headerA4.activeA{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    margin: 0;
+    padding-left: 30px;
+}
+.header-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+    gap: 20px;
+}
+.headerA, .headerA1, .headerA2, .headerA3, .headerA4 {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s;
+}
+.home {
+    background-color: black;
+    color: white;
+    height: 700px;
+    background-image: url(/img/s24u.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 80%;
+
+}
+.about {
+    color: black;
+    height: 500px;
+}
+p {
+    text-align: center;
+    padding-top: 50px;
+}
+.services {
+    color: black;
+    height: 100vh;
+}
+h2 {
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
